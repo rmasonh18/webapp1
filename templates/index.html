@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Index Page
+{% endblock %}
+
+{% block body %}
+    <p>Home page using a layout template</p>
+    <form action="{{ url_for('hello') }}" method="post">
+        <input type="text" name="name" placeholder="Enter your name">
+        <button>Submit</button>
+    </form>
+<!--    <a href="{{ url_for('mor'}}">See more info...</a>-->
+{% endblock %}
