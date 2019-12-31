@@ -1,3 +1,24 @@
+
+{% extends "layout.html" %}
+
+{% block heading %}
+    Index Page
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('hello') }}" method="post">
+        <input type="text" name="name" placeholder="Enter your name">
+        <button>Submit</button>
+    </form>
+{% endblock %}
+
+
+
+
+
+
+
+<!--
 {% extends "layout.html" %}
 
 {% block heading %}
@@ -10,5 +31,5 @@
         <input type="text" name="name" placeholder="Enter your name">
         <button>Submit</button>
     </form>
-<!--    <a href="{{ url_for('mor'}}">See more info...</a>-->
-{% endblock %}
+&lt;!&ndash;    <a href="{{ url_for('mor'}}">See more info...</a>&ndash;&gt;
+{% endblock %}-->
